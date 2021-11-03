@@ -1,0 +1,468 @@
+*{
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62, 5%;
+}
+
+body{
+    font-size: 16px;
+    background-color:#232323;
+}
+
+header{
+    height: 100px;
+    background-color: #663399;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 35px;
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: #215ce6;
+    font-weight: bold;
+}
+
+
+/*---Navegador---*/
+
+#d-flex{
+    visibility: hidden;
+}
+
+nav img{
+    width: 150px;
+    height: 110px;
+}
+
+.navbar{
+    background-color: #663399;
+    z-index: 1;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.nav-item{
+    padding-left: 10px;
+    font-size: 16px;
+    word-spacing: 5px;
+    margin:5px;
+    font-weight: bold;
+}
+.nav-item:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1.5s;
+    font-size: 18px;
+}
+.d-flex input{
+        border:solid 1.8px #215ce6;
+        font-size: 14px;
+        height: 24px;
+}
+
+.d-flex button{
+    display: inline-flex;
+    align-items: center;
+    color: azure;
+    border:solid 1.5px #215ce6;
+    height: 24px;
+}
+.d-flex button:hover{
+    background-color: #215ce6;
+    border:solid 1.5px #215ce6;
+}
+
+/*---Index seccion principal---*/
+
+.titulo{
+    margin: 1.5rem 1.9rem;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #215ce6;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.divCarousel{
+    height: 540px;
+    border: solid 3px #215ce6;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #663399;
+    z-index: 0;
+}
+.divCarousel img{
+    border:solid 2px #215ce6;
+    border-radius: 10px;
+}
+
+    .sectionUno{
+        background-color: #663399;
+        margin: 20px;
+        border: solid 4px #215ce6;
+        border-radius: 15px;
+        padding: 15px; 
+    }
+
+    .sectionUno img{
+        border: solid 3px #215ce6;
+        border-radius: 10px;
+    }
+
+    .sectionUno__parrafo{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/*---Recientes---*/
+
+    .tituloRecientes{
+        font-size: 35px;
+        padding: 15px 26px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+    }
+
+    .sectionRecientes{
+        margin: 26px;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+        display: grid;
+        grid-template-rows: repeat(2, 370px );
+        grid-template-columns: repeat(3, 300px);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .sectionRecientes h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .recientes__img{
+        padding: 3px;
+        border: solid 2px black;
+        border-radius: 15px;
+        width: 230px;
+        height: 280px;
+    }
+
+    .recientes__img:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+
+/*---Destacados---*/
+
+.sectionDestacados{
+    margin: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+    display: grid;
+    grid-template-rows: repeat(2, 370px );
+    grid-template-columns: repeat(3, 300px);
+    grid-template-areas: 
+    "naruto bnh jujutsu"
+    "naruto kimetsu tokio";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sectionDestacados h3{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.destacados__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px;
+}
+
+.destacados__img:hover{
+    transform: scale(1.1 , 1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.naruto{
+    grid-area: naruto;
+}
+.bnh{
+    grid-area: bnh;
+}
+.jujutsu{
+    grid-area: jujutsu;
+}
+.kimetsu{
+    grid-area: kimetsu;
+}
+.one{
+    grid-area: one;
+    display: none;
+}
+.tokio{
+    grid-area: tokio;
+}
+
+    .tituloDestacados{
+        font-size: 35px;
+        padding: 15px 26px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+    }
+
+/*---Directorio---*/
+
+    .sectionDirectorio{
+        margin: 26px;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+        display: grid;
+        grid-template-rows: repeat(3, 370px );
+        grid-template-columns: repeat(4, 300px);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .tituloDirectorio{
+        font-size: 35px;
+        padding: 15px 26px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+    }
+
+    .directorio__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 180px;
+    height: 220px;
+    }
+
+    .directorio__img:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .sectionDirectorio h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+/*----Inicio de sesion----*/
+
+.sectionInicio{
+    width: 70%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 300PX;
+    background-color: #f6f5f8;
+    margin: 40px 26px 80px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.tituloInicio{
+        font-size: 35px;
+        padding: 10px 40px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+        font-weight: bold;
+}
+
+
+/*----Registro---*/
+
+.tituloRegistro{
+        font-size: 35px;
+        padding: 15px 26px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+}
+
+.sectionRegistro{        
+        width: 95%;
+        height: 600px;
+        padding: 25px;
+        background-color: #f3edf8;
+        border-radius: 20px;
+        margin: 40px 26px 80px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+}
+
+.div__registro li{
+    list-style-type: none;
+}
+
+
+
+/*---Contacto---*/
+
+.sectionContacto{
+        width: 600px;
+        height: 580px;
+        margin: 26px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f3edf8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+.tituloContacto{
+        font-size: 35px;
+        padding: 15px 26px;
+        margin-top: 25px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        color: #215ce6;
+}
+
+
+
+/*-----Footer-----*/
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient( to right, #892be298, #215ce6, #892be298);
+    padding: 30px;
+    color: #ffff;
+}
+
+
+
+    /*-----Responsive 575px-----*/
+
+    @media only screen and (max-width: 575px) {
+
+    .titulo{
+        text-align: center;
+    }
+
+    .sectionRecientes{
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+        display: grid;
+        grid-template-rows: repeat(1, 370px );
+        grid-template-columns: repeat(1, 300px);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+
+    /*-----Responsive 576px a 767px-----*/
+
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+        .titulo{
+            text-align: center;
+        }
+
+        .sectionUno__parrafo {
+            MARGIN: 11PX 13PX 5PX 13PX;
+        }
+
+
+    .sectionRecientes{
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+        display: grid;
+        grid-template-rows: repeat(1, 370px );
+        grid-template-columns: repeat(1, 300px);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+    /*-----Responsive 768px a 991px-----*/
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .titulo{
+        text-align: center;
+    }
+    .sectionUno__parrafo {
+        MARGIN: 11PX 13PX 5PX 13PX;
+    }
+
+    .sectionRecientes{
+        margin: 26px;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+        display: grid;
+        grid-template-rows: repeat(2, 370px );
+        grid-template-columns: repeat(3, 300px);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+    /*Responsive 992px a 1199px-----*/
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .nav-item{
+        font-size: 13px;
+        word-spacing: 5px;
+        margin:5px;
+        font-weight: bold;
+}
+
+    .nav-item:hover{
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: 1.5s;
+        font-size: 15px;
+}
+
+        .sectionUno__parrafo{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    FONT-SIZE: 1.20vw;
+}
+    }

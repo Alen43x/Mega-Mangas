@@ -1,0 +1,48 @@
+#d-flex{
+    visibility: hidden;
+}
+
+.navbar{
+    background-color: $color-primario;
+    z-index: 1;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px $color-primario 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px $color-primario 5px 5px 15px 5px rgba(0,0,0,0);
+    .nav-item{
+        padding-left: 10px;
+        font-size: 16px;
+        word-spacing: 5px;
+        margin:5px;
+        font-weight: bold;
+        &:hover{
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 1.5s;
+            font-size: 18px;
+        }
+    }
+    img{
+        width: 150px;
+        height: 110px;
+    }
+}
+
+.d-flex{ 
+    input{
+        border:solid 1.8px $color-secundario;
+        font-size: 14px;
+        height: 24px;
+    }
+    .d-flex{ 
+        button{
+            display: inline-flex;
+            align-items: center;
+            color: azure;
+            border:solid 1.5px $color-secundario;
+            height: 24px;
+            &:hover{
+                background-color: $color-secundario;
+                border:solid 1.5px $color-secundario;
+            }
+        }
+    }
+}

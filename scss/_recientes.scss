@@ -1,0 +1,40 @@
+.tituloRecientes{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: #215ce6;
+}
+
+.sectionRecientes{
+    margin: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #892be298, #215ce6, #892be298);
+    display: grid;
+    grid-template-rows: repeat(2, 370px );
+    grid-template-columns: repeat(3, 300px);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.recientes__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px;
+    &:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+}

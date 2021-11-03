@@ -1,0 +1,274 @@
+@import "variables";
+@import "global";
+
+
+/*---NAVEGADOR---*/
+
+@import "nav";
+
+/*---INDEX SECCION PRINCIPAL---*/
+
+.titulo{
+    margin: 1.5rem 1.9rem;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-secundario;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.sectionUno{
+    background-color: $color-primario;
+    margin: 20px;
+    border: solid 4px $color-secundario;
+    border-radius: 15px;
+    padding: 15px;
+    img{
+        border: solid 3px $color-secundario;
+        border-radius: 10px;
+    }
+}
+
+.sectionUno__parrafo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*-----RECIENTES-----*/
+.tituloRecientes{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario;
+}
+
+.sectionRecientes{
+    margin: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, $color-primario, $color-secundario, $color-primario);
+    display: grid;
+    grid-template-rows: repeat(2, 370px );
+    grid-template-columns: repeat(3, 300px);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.recientes__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px;
+    &:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
+/*---DESTACADOS---*/
+
+.tituloDestacados{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario, ;
+}
+
+.sectionDestacados{
+    margin: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, $color-primario, $color-secundario, $color-primario);
+    display: grid;
+    grid-template-rows: repeat(2, 370px );
+    grid-template-columns: repeat(3, 300px);
+    grid-template-areas: 
+    "naruto bnh jujutsu"
+    "naruto kimetsu tokio";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.destacados__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px;
+    &:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
+.naruto{
+    grid-area: naruto;
+}
+.bnh{
+    grid-area: bnh;
+}
+.jujutsu{
+    grid-area: jujutsu;
+}
+.kimetsu{
+    grid-area: kimetsu;
+}
+.one{
+    grid-area: one;
+    display: none;
+}
+.tokio{
+    grid-area: tokio;
+}
+
+/*----DIRECTORIO----*/
+
+.tituloDirectorio{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario, ;
+}
+
+.sectionDirectorio{
+    margin: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, $color-primario, $color-secundario, $color-primario);
+    display: grid;
+    grid-template-rows: repeat(3, 370px );
+    grid-template-columns: repeat(4, 300px);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+.directorio__img{
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 180px;
+    height: 220px;
+    &:hover{
+        transform: scale(1.1 , 1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
+/*---INCIO DE SESION---*/
+
+.tituloInicio{
+    font-size: 35px;
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario, ;
+    font-weight: bold;
+}
+
+.sectionInicio{
+    width: 70%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 250PX;
+    background-color: #f6f5f8;
+    margin: 40px 26px 80px;
+    padding: 25px;
+    border-radius: 20px;
+}
+/*----REGISTRO----*/
+.tituloRegistro{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario, ;
+}
+
+.sectionRegistro{        
+    width: 95%;
+    height: 600px;
+    padding: 25px;
+    background-color: #f3edf8;
+    border-radius: 20px;
+    margin: 40px 26px 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.div__registro{ 
+    li{
+        list-style-type: none;
+    }
+}   
+
+/*---CONTACTO---*/
+
+.tituloContacto{
+    font-size: 35px;
+    padding: 15px 26px;
+    margin-top: 25px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: $color-secundario, ;
+}
+
+.sectionContacto{
+    width: 600px;
+    height: 580px;
+    margin: 26px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f3edf8;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/*-----FOOTER-----*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient( to right, $color-primario, $color-secundario, $color-primario);
+    padding: 30px;
+    color: #ffff;
+}
+
+/*---SECCION MEDIA Q---*/
+
+@import "mediaqueries";

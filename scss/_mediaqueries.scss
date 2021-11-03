@@ -1,0 +1,59 @@
+
+/*-----Responsive 575px-----*/
+
+@media only screen and (max-width: 575px) {
+
+    .titulo{
+        text-align: center;
+    }
+}
+
+/*-----Responsive 576px a 767px-----*/
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .titulo{
+        text-align: center;
+    }
+
+    .sectionUno__parrafo {
+        margin: 11PX 13PX 5PX 13PX;
+    }
+}
+
+/*-----Responsive 768px a 991px-----*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .titulo{
+        text-align: center;
+    }
+
+    .sectionUno__parrafo {
+        margin: 11PX 13PX 5PX 13PX;
+    }
+}
+
+/*Responsive 992px a 1199px-----*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .nav-item{
+        font-size: 13px;
+        word-spacing: 5px;  
+        margin:5px;
+        font-weight: bold;
+        &:hover{
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 1.5s;
+            font-size: 15px;
+        }
+    }
+
+    .sectionUno__parrafo{
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-size: 1.20vw;
+    }
+}
