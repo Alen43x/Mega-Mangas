@@ -12,7 +12,7 @@ body {
 
 header {
   height: 100px;
-  background-color: #663399;
+  background-color: #a81010;
   margin-bottom: 50px; }
 
 h1 {
@@ -35,10 +35,10 @@ h2 {
   visibility: hidden; }
 
 .navbar {
-  background-color: #663399;
+  background-color: #a81010;
   z-index: 1;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399 5px 5px 15px 5px rgba(0, 0, 0, 0); }
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #a81010 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #a81010 5px 5px 15px 5px rgba(0, 0, 0, 0); }
   .navbar .nav-item {
     padding-left: 10px;
     font-size: 16px;
@@ -79,7 +79,7 @@ h2 {
   font-family: 'Gemunu Libre', sans-serif; }
 
 .sectionUno {
-  background-color: #663399;
+  background-color: #a81010;
   margin: 20px;
   border: solid 4px #215ce6;
   border-radius: 15px;
@@ -103,7 +103,7 @@ h2 {
 .sectionRecientes {
   margin: 26px;
   border-radius: 20px;
-  background-image: linear-gradient(to top, #663399, #215ce6, #663399);
+  background-image: linear-gradient(to top, #a81010, #215ce6, #a81010);
   display: grid;
   grid-template-rows: repeat(2, 370px);
   grid-template-columns: repeat(3, 300px);
@@ -140,11 +140,12 @@ h2 {
 .sectionDestacados {
   margin: 26px;
   border-radius: 20px;
-  background-image: linear-gradient(to top, #663399, #215ce6, #663399);
+  background-image: linear-gradient(to top, #a81010, #215ce6, #a81010);
   display: grid;
   grid-template-rows: repeat(2, 370px);
   grid-template-columns: repeat(3, 300px);
-  grid-template-areas: "naruto bnh jujutsu" "naruto kimetsu tokio";
+  grid-template-areas: "naruto bnh jujutsu"
+ "naruto kimetsu tokio";
   align-items: center;
   justify-items: center;
   justify-content: space-evenly;
@@ -197,7 +198,7 @@ h2 {
 .sectionDirectorio {
   margin: 26px;
   border-radius: 20px;
-  background-image: linear-gradient(to top, #663399, #215ce6, #663399);
+  background-image: linear-gradient(to top, #a81010, #215ce6, #a81010);
   display: grid;
   grid-template-rows: repeat(3, 370px);
   grid-template-columns: repeat(4, 300px);
@@ -290,7 +291,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(to right, #663399, #215ce6, #663399);
+  background-image: linear-gradient(to right, #a81010, #215ce6, #a81010);
   padding: 30px;
   color: #ffff; }
 
