@@ -38,7 +38,8 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
-    .nav-item{
+    .navbar{
+        li{
         font-size: 13px;
         word-spacing: 5px;  
         margin:5px;
@@ -50,6 +51,7 @@
             font-size: 15px;
         }
     }
+}
 
     .sectionUno__parrafo{
         margin-top: 8px;

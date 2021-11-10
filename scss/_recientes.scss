@@ -24,17 +24,16 @@
         font-size: 15px;
         font-weight: bold;
     }
-}
-
-.recientes__img{
-    padding: 3px;
-    border: solid 2px black;
-    border-radius: 15px;
-    width: 230px;
-    height: 280px;
-    &:hover{
-        transform: scale(1.1 , 1.1);
-        transition: 1s;
-        cursor: pointer;
+    img{
+        padding: 3px;
+        border: solid 2px black;
+        border-radius: 15px;
+        width: 230px;
+        height: 280px;
+        &:hover{
+            transform: scale(1.1 , 1.1);
+            transition: 1s;
+            cursor: pointer;
+        }
     }
 }

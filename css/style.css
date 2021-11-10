@@ -16,19 +16,18 @@ header {
   margin-bottom: 50px; }
 
 h1 {
-  margin: 1.5rem 1.9rem;
   font-style: italic;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #215ce6;
   font-family: 'Gemunu Libre', sans-serif; }
 
 h2 {
   font-size: 35px;
+  font-weight: bold;
   padding: 15px 26px;
   margin-top: 25px;
   font-family: 'Big Shoulders Stencil Display', cursive;
-  font-weight: bold;
   color: #215ce6; }
 
 /*---NAVEGADOR---*/
@@ -40,13 +39,13 @@ h2 {
   z-index: 1;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #663399 5px 5px 15px 5px rgba(0, 0, 0, 0); }
-  .navbar .nav-item {
+  .navbar li {
     padding-left: 10px;
     font-size: 16px;
     word-spacing: 5px;
     margin: 5px;
     font-weight: bold; }
-    .navbar .nav-item:hover {
+    .navbar li:hover {
       text-transform: uppercase;
       font-weight: bold;
       transition: 1.5s;
@@ -72,25 +71,26 @@ h2 {
 
 /*---INDEX SECCION PRINCIPAL---*/
 .titulo {
-  margin: 1.7rem 2.6rem;
+  margin: 2.1rem 2.5rem;
+  padding-top: 15px;
   font-style: italic;
+  font-size: 6rem;
   font-weight: bold;
   color: #215ce6;
   font-family: 'Gemunu Libre', sans-serif; }
 
 .sectionUno {
   background-color: #663399;
-  margin: 20px;
+  margin: 60px 20px;
   border: solid 4px #215ce6;
   border-radius: 15px;
   padding: 15px; }
+  .sectionUno__parrafo {
+    margin-top: 5px;
+    margin-bottom: 5px; }
   .sectionUno img {
     border: solid 3px #215ce6;
     border-radius: 10px; }
-
-.sectionUno__parrafo {
-  margin-top: 5px;
-  margin-bottom: 5px; }
 
 /*-----RECIENTES-----*/
 .tituloRecientes {
@@ -117,17 +117,16 @@ h2 {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold; }
-
-.recientes__img {
-  padding: 3px;
-  border: solid 2px black;
-  border-radius: 15px;
-  width: 230px;
-  height: 280px; }
-  .recientes__img:hover {
-    transform: scale(1.1, 1.1);
-    transition: 1s;
-    cursor: pointer; }
+  .sectionRecientes img {
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px; }
+    .sectionRecientes img:hover {
+      transform: scale(1.1, 1.1);
+      transition: 1s;
+      cursor: pointer; }
 
 /*---DESTACADOS---*/
 .tituloDestacados {
@@ -144,8 +143,7 @@ h2 {
   display: grid;
   grid-template-rows: repeat(2, 370px);
   grid-template-columns: repeat(3, 300px);
-  grid-template-areas: "naruto bnh jujutsu"
- "naruto kimetsu tokio";
+  grid-template-areas: "naruto bnh jujutsu" "naruto kimetsu tokio";
   align-items: center;
   justify-items: center;
   justify-content: space-evenly;
@@ -156,17 +154,16 @@ h2 {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold; }
-
-.destacados__img {
-  padding: 3px;
-  border: solid 2px black;
-  border-radius: 15px;
-  width: 230px;
-  height: 280px; }
-  .destacados__img:hover {
-    transform: scale(1.1, 1.1);
-    transition: 1s;
-    cursor: pointer; }
+  .sectionDestacados img {
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px; }
+    .sectionDestacados img:hover {
+      transform: scale(1.1, 1.1);
+      transition: 1s;
+      cursor: pointer; }
 
 .naruto {
   grid-area: naruto; }
@@ -212,17 +209,16 @@ h2 {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold; }
-
-.directorio__img {
-  padding: 3px;
-  border: solid 2px black;
-  border-radius: 15px;
-  width: 180px;
-  height: 220px; }
-  .directorio__img:hover {
-    transform: scale(1.1, 1.1);
-    transition: 1s;
-    cursor: pointer; }
+  .sectionDirectorio img {
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 180px;
+    height: 220px; }
+    .sectionDirectorio img:hover {
+      transform: scale(1.1, 1.1);
+      transition: 1s;
+      cursor: pointer; }
 
 /*---INCIO DE SESION---*/
 .tituloInicio {
@@ -262,9 +258,8 @@ h2 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start; }
-
-.div__registro li {
-  list-style-type: none; }
+  .sectionRegistro li {
+    list-style-type: none; }
 
 /*---CONTACTO---*/
 .tituloContacto {
@@ -288,6 +283,7 @@ h2 {
 
 /*-----FOOTER-----*/
 footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -317,12 +313,12 @@ footer {
 
 /*Responsive 992px a 1199px-----*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .nav-item {
+  .navbar li {
     font-size: 13px;
     word-spacing: 5px;
     margin: 5px;
     font-weight: bold; }
-    .nav-item:hover {
+    .navbar li:hover {
       text-transform: uppercase;
       font-weight: bold;
       transition: 1.5s;

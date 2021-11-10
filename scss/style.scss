@@ -9,9 +9,10 @@
 /*---INDEX SECCION PRINCIPAL---*/
 
 .titulo{
-    margin: 1.5rem 1.9rem;
+    margin: 2.1rem 2.5rem;
+    padding-top: 15px;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
     color: $color-secundario;
     font-family: 'Gemunu Libre', sans-serif;
@@ -19,19 +20,18 @@
 
 .sectionUno{
     background-color: $color-primario;
-    margin: 20px;
+    margin: 60px 20px;
     border: solid 4px $color-secundario;
     border-radius: 15px;
     padding: 15px;
+    &__parrafo{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
     img{
         border: solid 3px $color-secundario;
         border-radius: 10px;
     }
-}
-
-.sectionUno__parrafo{
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 /*-----RECIENTES-----*/
@@ -61,20 +61,20 @@
         font-size: 15px;
         font-weight: bold;
     }
-}
-
-.recientes__img{
-    padding: 3px;
-    border: solid 2px black;
-    border-radius: 15px;
-    width: 230px;
-    height: 280px;
-    &:hover{
-        transform: scale(1.1 , 1.1);
-        transition: 1s;
-        cursor: pointer;
+    img{
+        padding: 3px;
+        border: solid 2px black;
+        border-radius: 15px;
+        width: 230px;
+        height: 280px;
+        &:hover{
+            transform: scale(1.1 , 1.1);
+            transition: 1s;
+            cursor: pointer;
+        }
     }
 }
+
 
 /*---DESTACADOS---*/
 
@@ -107,20 +107,20 @@
         font-size: 15px;
         font-weight: bold;
     }
-}
-
-.destacados__img{
-    padding: 3px;
-    border: solid 2px black;
-    border-radius: 15px;
-    width: 230px;
-    height: 280px;
-    &:hover{
-        transform: scale(1.1 , 1.1);
-        transition: 1s;
-        cursor: pointer;
+    img{
+        padding: 3px;
+        border: solid 2px black;
+        border-radius: 15px;
+        width: 230px;
+        height: 280px;
+        &:hover{
+            transform: scale(1.1 , 1.1);
+            transition: 1s;
+            cursor: pointer;
+        }
     }
 }
+
 
 .naruto{
     grid-area: naruto;
@@ -170,20 +170,20 @@
         font-size: 13px;
         font-weight: bold;
     }
-}
-
-.directorio__img{
-    padding: 3px;
-    border: solid 2px black;
-    border-radius: 15px;
-    width: 180px;
-    height: 220px;
-    &:hover{
-        transform: scale(1.1 , 1.1);
-        transition: 1s;
-        cursor: pointer;
+    img{
+        padding: 3px;
+        border: solid 2px black;
+        border-radius: 15px;
+        width: 180px;
+        height: 220px;
+        &:hover{
+            transform: scale(1.1 , 1.1);
+            transition: 1s;
+            cursor: pointer;
+        }
     }
 }
+
 
 /*---INCIO DE SESION---*/
 
@@ -226,13 +226,10 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-}
-
-.div__registro{ 
     li{
         list-style-type: none;
-    }
-}   
+    }  
+}
 
 /*---CONTACTO---*/
 
@@ -261,6 +258,7 @@
 /*-----FOOTER-----*/
 
 footer{
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;

@@ -7,7 +7,7 @@
     z-index: 1;
     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px $color-primario 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px $color-primario 5px 5px 15px 5px rgba(0,0,0,0);
-    .nav-item{
+    li{
         padding-left: 10px;
         font-size: 16px;
         word-spacing: 5px;
@@ -31,18 +31,17 @@
         border:solid 1.8px $color-secundario;
         font-size: 14px;
         height: 24px;
+        
     }
-    .d-flex{ 
-        button{
-            display: inline-flex;
-            align-items: center;
-            color: azure;
+    & button{
+        display: inline-flex;
+        align-items: center;
+        color: azure;
+        border:solid 1.5px $color-secundario;
+        height: 24px;
+        &:hover{
+            background-color: $color-secundario;
             border:solid 1.5px $color-secundario;
-            height: 24px;
-            &:hover{
-                background-color: $color-secundario;
-                border:solid 1.5px $color-secundario;
-            }
         }
     }
 }
