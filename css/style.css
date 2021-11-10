@@ -284,12 +284,32 @@ h2 {
 /*-----FOOTER-----*/
 footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   background-image: linear-gradient(to right, #663399, #215ce6, #663399);
-  padding: 30px;
-  color: #ffff; }
+  padding: 30px; }
+  footer p {
+    text-align: end;
+    padding-top: 5px;
+    font-weight: bolder; }
+  footer .iconsContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 60px; }
+    footer .iconsContainer button {
+      width: 35px;
+      background: white;
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      padding: 5px;
+      margin: 0px 5px;
+      color: #215ce6;
+      font-size: 16px;
+      transition: .3s ease all; }
+      footer .iconsContainer button:hover {
+        background: #215ce6;
+        color: #f6f5f8;
+        box-shadow: 3px 3px 10px black; }
 
 /*---SECCION MEDIA Q---*/
 /*-----Responsive 575px-----*/

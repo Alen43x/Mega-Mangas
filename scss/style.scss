@@ -259,12 +259,36 @@
 
 footer{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     background-image: linear-gradient( to right, $color-primario, $color-secundario, $color-primario);
     padding: 30px;
-    color: #ffff;
+    p{
+        text-align: end;
+        padding-top: 5px;
+        font-weight: bolder;
+    }
+    .iconsContainer{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 60px;
+        button{
+            width: 35px;
+            background: white;
+            border:none;
+            border-radius: 35px;
+            cursor: pointer;
+            padding: 5px;
+            margin: 0px 5px;
+            color: $color-secundario;
+            font-size: 16px;
+            transition: .3s ease all;
+            &:hover{
+                background: $color-secundario;
+                color: #f6f5f8;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 10);
+            }
+        }
+    }
 }
 
 /*---SECCION MEDIA Q---*/
