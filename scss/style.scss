@@ -10,7 +10,7 @@
 
 .titulo{
     margin: 2.1rem 2.5rem;
-    padding-top: px;
+    padding-top: 20px;
     font-style: italic;
     font-size: 6rem;
     font-weight: bold;
@@ -18,9 +18,60 @@
     font-family: 'Gemunu Libre', sans-serif;
 }
 
+
+.container__card{
+    perspective: 1000px;
+}
+
+.cards__father{
+    position: relative;
+    margin: 25px;
+    &:hover .card{
+        transform: rotateX(180deg);
+    }
+}
+
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.75);
+}
+
+.card__front{
+    img{border-radius: 10px;
+    }
+}
+
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateX(180deg);
+    background-image: url(/multimedia/cardback.jpg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.body__card_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+    color: #f6f5f8;
+}
+
 .sectionUno{
     background-color: $color-primario;
-    margin: 60px 20px;
+    margin: 30px 20px;
     -webkit-box-shadow: 6px 6px 4px -1px rgba(33,92,230,1);
     -moz-box-shadow: 6px 6px 4px -1px rgba(33,92,230,1);
     box-shadow: 6px 6px 4px -1px rgba(33,92,230,1);
