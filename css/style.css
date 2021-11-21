@@ -110,6 +110,7 @@ h2 {
   position: absolute;
   transform: rotateX(180deg);
   background-image: url(/multimedia/cardback.jpg);
+  background-size: cover;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 10px; }
@@ -122,7 +123,8 @@ h2 {
   height: 100%;
   text-align: center;
   padding: 15px;
-  color: #f6f5f8; }
+  color: #f6f5f8;
+  transform: translateZ(60px); }
 
 .sectionUno {
   background-color: #663399;
@@ -133,6 +135,7 @@ h2 {
   border-radius: 10px;
   padding: 15px; }
   .sectionUno__parrafo {
+    color: #ffffffef;
     margin-top: 5px;
     margin-bottom: 5px; }
   .sectionUno img {
@@ -151,14 +154,12 @@ h2 {
 
 .sectionRecientes {
   margin: 26px;
+  padding: 32px;
   border-radius: 20px;
   background-image: linear-gradient(to top, #663399, #215ce6, #663399);
-  display: grid;
-  grid-template-rows: repeat(2, 370px);
-  grid-template-columns: repeat(3, 300px);
-  align-items: center;
-  justify-items: center;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: space space-between;
+  justify-content: center;
   text-align: center;
   -webkit-box-shadow: 0px 0px 5px 6px black;
   -moz-box-shadow: 0px 0px 5px 6px black;
@@ -171,6 +172,7 @@ h2 {
     font-weight: bold; }
   .sectionRecientes img {
     padding: 3px;
+    margin: 20px 20px 0px 20px;
     border: solid 2px black;
     border-radius: 15px;
     width: 230px;
@@ -246,15 +248,11 @@ h2 {
 
 .sectionDirectorio {
   margin: 26px;
+  padding: 32px;
   border-radius: 20px;
   background-image: linear-gradient(to top, #663399, #215ce6, #663399);
-  display: grid;
-  grid-template-rows: repeat(3, 370px);
-  grid-template-columns: repeat(4, 300px);
-  align-items: center;
-  justify-items: center;
-  justify-content: space-evenly;
-  text-align: center; }
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
   .sectionDirectorio h3 {
     margin-top: 20px;
     text-align: center;
@@ -262,6 +260,7 @@ h2 {
     font-size: 13px;
     font-weight: bold; }
   .sectionDirectorio img {
+    margin: 20px 20px 0px 20px;
     padding: 3px;
     border: solid 2px black;
     border-radius: 15px;

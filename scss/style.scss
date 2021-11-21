@@ -53,6 +53,7 @@
     position: absolute;
     transform: rotateX(180deg);
     background-image: url(/multimedia/cardback.jpg);
+    background-size: cover;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     border-radius: 10px;
@@ -67,6 +68,7 @@
     text-align: center;
     padding: 15px;
     color: #f6f5f8;
+    transform: translateZ(60px);
 }
 
 .sectionUno{
@@ -78,6 +80,7 @@
     border-radius: 10px;
     padding: 15px;
     &__parrafo{
+        color: #ffffffef;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -100,14 +103,12 @@
 
 .sectionRecientes{
     margin: 26px;
+    padding: 32px;
     border-radius: 20px;
     background-image: linear-gradient(to top, $color-primario, $color-secundario, $color-primario);
-    display: grid;
-    grid-template-rows: repeat(2, 370px );
-    grid-template-columns: repeat(3, 300px);
-    align-items: center;
-    justify-items: center;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space space-between;
+    justify-content: center;
     text-align: center;
     -webkit-box-shadow: 0px 0px 5px 6px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 5px 6px rgba(0,0,0,1);
@@ -121,6 +122,7 @@
     }
     img{
         padding: 3px;
+        margin: 20px 20px 0px 20px;
         border: solid 2px black;
         border-radius: 15px;
         width: 230px;
@@ -212,15 +214,11 @@
 
 .sectionDirectorio{
     margin: 26px;
+    padding: 32px;
     border-radius: 20px;
     background-image: linear-gradient(to top, $color-primario, $color-secundario, $color-primario);
-    display: grid;
-    grid-template-rows: repeat(3, 370px );
-    grid-template-columns: repeat(4, 300px);
-    align-items: center;
-    justify-items: center;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    text-align: center;
     h3{
         margin-top: 20px;
         text-align: center;
@@ -229,6 +227,7 @@
         font-weight: bold;
     }
     img{
+        margin: 20px 20px 0px 20px;
         padding: 3px;
         border: solid 2px black;
         border-radius: 15px;
