@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/logomm.png">
-    
+
     <title>Registro. registrate y obten beneficios</title>
 
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <script src="../js/bootstrap.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
 
-        <!--Css-->
-        <link rel="stylesheet" href="../css/style.css">
+    <!--Css-->
+    <link rel="stylesheet" href="../css/style.css">
 
-        <!--Google fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap"
-            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap"
+        rel="stylesheet">
 
-        <!--Fontawesome-->
-        <script src="https://kit.fontawesome.com/4300918c19.js" crossorigin="anonymous"></script>
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/4300918c19.js" crossorigin="anonymous"></script>
 
-        <!--Keywords-->
-        <meta name="keywords" content="manga, anime, lectura, comics, otaku, registrate, hazte miembro, unete">
+    <!--Keywords-->
+    <meta name="keywords" content="manga, anime, lectura, comics, otaku, registrate, hazte miembro, unete">
 
-        <!--Meta Description-->
-        <meta name="description"
-            content="Si aun no eres miembro, te envitamos a registrarte y obtener los beneficios que tiene Mega mangas para ofrecerte. ¿¡que estas esperando!? ">
-    
+    <!--Meta Description-->
+    <meta name="description"
+        content="Si aun no eres miembro, te envitamos a registrarte y obtener los beneficios que tiene Mega mangas para ofrecerte. ¿¡que estas esperando!? ">
+
 </head>
 
 <body>
@@ -70,52 +71,18 @@
 
     <div>
         <div class="sectionRegistro">
-            <form>
-                <p><h3>Completa el formulario de registro</h3></p>
-                <br>
-
-                <div>
-                    <ul>
-                        <li>
-                            <label for="Sexo">Sexo</label>
-                            <input type="radio" name="Sexo"> Femenino
-                            <input type="radio" name="Sexo"> Masculino
-                        </li><br>
-
-                        <li>
-                            <label for="Nombre">Nombre:</label>
-                            <input type="text" name="Nombre:" id="Nombre:" placeholder="Ingrese su nombre">
-                        </li><br>
-
-                        <li>
-                            <label for="Apellido">Apellido:</label>
-                            <input type="text" name="Apellido:" id="Apellido:" placeholder="Ingrese su apellido">
-                        </li><br>
-
-                        <li>
-                            <label for="E-mail">E-mail:</label>
-                            <input type="email" name="E-mail:" id="E-mail:" placeholder="Ingrese su e-mail">
-                        </li><br>
-
-                        <li>
-                            <label for="Contraseña">Contraseña:</label>
-                            <input type="password" name="Contraseña:" id="Contraseña:" placeholder="Ingrese una contraseña">
-                        </li><br><br>
-
-                        <p>Como conociste la pagina?</p>
-                        <select name="Como conociste la pagina">
-                            <option value="Facebook">Facebook</option>
-                            <option value="Instagram">Instagram</option>
-                            <option value="Otro">Otro</option>
-                        </select><br><br>
-
-                        <label for="terminos y condiciones"> Estoy de acuerdo con los <a href="#">Terminos y condiciones</label> </a> <input type="checkbox" name="Acepta">
-                        <br><br>
-
-                        <input type="submit" value="Registrar">
-                    </ul>
-                </div>
-            </form>
+            <section class="form-register">
+                <h4>Formulario de Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos"
+                    placeholder="Ingrese su Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="password" name="correo" id="correo"
+                    placeholder="Ingrese su Contraseña">
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="">¿Ya t Cuenta?</a></p>
+            </section>
         </div>
     </div>
     <!--footer-->
@@ -138,4 +105,5 @@
         </div>
     </footer>
 </body>
+
 </html>
