@@ -72,7 +72,7 @@ h2 {
     background-color: #215ce6;
     border: solid 1.5px #215ce6; }
 
-/*---INDEX SECCION PRINCIPAL---*/
+/*---INDEX---*/
 .titulo {
   margin: 2.1rem 2.5rem;
   padding-top: 20px;
@@ -82,14 +82,14 @@ h2 {
   color: #215ce6;
   font-family: 'Gemunu Libre', sans-serif; }
 
-.container__card {
+/*---INDEX NOTICIAS---*/
+.containerCard {
   perspective: 1000px; }
-
-.cards__father {
-  position: relative;
-  margin: 25px; }
-  .cards__father:hover .card {
-    transform: rotateX(180deg); }
+  .containerCard__padre {
+    position: relative;
+    margin: 25px; }
+    .containerCard__padre:hover .card {
+      transform: rotateX(180deg); }
 
 .card {
   position: relative;
@@ -100,20 +100,18 @@ h2 {
   -webkit-box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.75); }
-
-.card__front img {
-  border-radius: 10px; }
-
-.card__back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: rotateX(180deg);
-  background-image: url(/multimedia/cardback.jpg);
-  background-size: cover;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  border-radius: 10px; }
+  .card__front img {
+    border-radius: 10px; }
+  .card__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateX(180deg);
+    background-image: url(/multimedia/Cardback2.jpg);
+    background-size: cover;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 10px; }
 
 .body__card_back {
   display: flex;
@@ -126,6 +124,7 @@ h2 {
   color: #f6f5f8;
   transform: translateZ(60px); }
 
+/*---INDEX SECCION UNO---*/
 .sectionUno {
   background-color: #663399;
   margin: 30px 20px;
@@ -192,16 +191,16 @@ h2 {
 
 .sectionDestacados {
   margin: 26px;
+  padding: 32px;
   border-radius: 20px;
   background-image: linear-gradient(to top, #663399, #215ce6, #663399);
-  display: grid;
-  grid-template-rows: repeat(2, 370px);
-  grid-template-columns: repeat(3, 300px);
-  grid-template-areas: "naruto bnh jujutsu" "naruto kimetsu tokio";
-  align-items: center;
-  justify-items: center;
-  justify-content: space-evenly;
-  text-align: center; }
+  flex-flow: row wrap;
+  justify-content: space space-between;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 6px black;
+  -moz-box-shadow: 0px 0px 5px 6px black;
+  box-shadow: 0px 0px 5px 6px black; }
   .sectionDestacados h3 {
     margin-top: 20px;
     text-align: center;
@@ -210,6 +209,7 @@ h2 {
     font-weight: bold; }
   .sectionDestacados img {
     padding: 3px;
+    margin: 20px 20px 0px 20px;
     border: solid 2px black;
     border-radius: 15px;
     width: 230px;
@@ -218,33 +218,6 @@ h2 {
       transform: scale(1.1, 1.1);
       transition: 1s;
       cursor: pointer; }
-
-.naruto {
-  grid-area: naruto; }
-
-.bnh {
-  grid-area: bnh; }
-
-.jujutsu {
-  grid-area: jujutsu; }
-
-.kimetsu {
-  grid-area: kimetsu; }
-
-.one {
-  grid-area: one;
-  display: none; }
-
-.tokio {
-  grid-area: tokio; }
-
-/*----DIRECTORIO----*/
-.tituloDirectorio {
-  font-size: 35px;
-  padding: 15px 26px;
-  margin-top: 25px;
-  font-family: 'Big Shoulders Stencil Display', cursive;
-  color: #215ce6; }
 
 .sectionDirectorio {
   margin: 26px;
@@ -334,6 +307,10 @@ h2 {
   font-size: 18px;
   line-height: 40px; }
 
+.form-register textarea {
+  background-color: #24303c;
+  border: solid 1px #215ce6; }
+
 .form-register a {
   color: white;
   text-decoration: none; }
@@ -359,24 +336,25 @@ h2 {
   font-family: 'Big Shoulders Stencil Display', cursive;
   color: #215ce6; }
 
-.sectionContacto {
-  width: 600px;
-  height: 580px;
-  margin: 26px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #f3edf8;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: flex-start; }
+/*.sectionContacto{
+    width: 600px;
+    height: 580px;
+    margin: 26px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f3edf8;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 
 /*-----FOOTER-----*/
 footer {
   width: 100%;
   background-image: linear-gradient(to right, #663399, #215ce6, #663399);
   padding: 30px;
-  margin: auto;
   -webkit-box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.9);
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.9); }
@@ -437,7 +415,23 @@ footer {
       font-weight: bold;
       transition: 1.5s;
       font-size: 15px; }
-  .sectionUno__parrafo {
+  .sectionUno p {
+    color: #ffffffef;
+    font-size: 19px;
     margin-top: 8px;
     margin-bottom: 5px;
     font-size: 1.20vw; } }
+
+.body__card_back p {
+  font-size: 1.20vw; }
+
+/*Responsive 1200px a 1400px-----*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .sectionUno p {
+    color: #ffffffef;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.25vw; } }
+
+.body__card_back p {
+  font-size: 1.25vw; }

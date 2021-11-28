@@ -53,9 +53,39 @@
     }
 }
 
-    .sectionUno__parrafo{
-        margin-top: 8px;
-        margin-bottom: 5px;
+    .sectionUno{
+        p{
+            color: #ffffffef;
+            font-size: 19px;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-size: 1.20vw;
+        }
+    }
+}
+
+.body__card_back{
+    p{
         font-size: 1.20vw;
+    }
+}
+
+/*Responsive 1200px a 1400px-----*/
+
+@media (min-width: 1200px) and (max-width: 1400px){
+
+    .sectionUno{
+        p{
+            color: #ffffffef;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 1.25vw;
+        }
+    }
+}
+
+.body__card_back{
+    p{
+        font-size: 1.25vw;
     }
 }
