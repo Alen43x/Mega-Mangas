@@ -25,25 +25,25 @@
         width: 150px;
         height: 110px;
     }
-}
-
-.d-flex{ 
-    input{
-        border:solid 1.8px $color-secundario;
-        font-size: 14px;
-        height: 24px;
-        border-radius: 12px;
-    }
-    & button{
-        display: inline-flex;
-        align-items: center;
-        color: azure;
-        border:solid 1.5px $color-secundario;
-        height: 24px;
-        border-radius: 10px;
-        &:hover{
-            background-color: $color-secundario;
+    .d-flex{ 
+        input{
+            border:solid 1.8px $color-secundario;
+            font-size: 14px;
+            height: 24px;
+            border-radius: 12px;
+        }
+        & button{
+            display: inline-flex;
+            align-items: center;
+            color: azure;
             border:solid 1.5px $color-secundario;
+            height: 24px;
+            border-radius: 10px;
+            &:hover{
+                background-color: $color-secundario;
+                border:solid 1.5px $color-secundario;
+            }
         }
     }
 }
+

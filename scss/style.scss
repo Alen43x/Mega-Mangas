@@ -1,5 +1,6 @@
 @import "variables";
 @import "global";
+@import "formularios";
 
 
 /*---NAVEGADOR---*/
@@ -248,66 +249,8 @@
     color: $color-secundario, ;
 }
 
-.form-register {
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-  }
-  
-  .form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-  
-  .controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid $color-secundario;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-  }
-  
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  .form-register textarea{
-      background-color: #24303c ;
-      border: solid 1px $color-secundario;
-  }
-  
-  .form-register a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .form-register a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  .form-register .botons {
-    width: 100%;
-    background: $color-secundario;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-  }
+
+
 
 /*---CONTACTO---*/
 
@@ -318,20 +261,6 @@
     font-family: 'Big Shoulders Stencil Display', cursive;
     color: $color-secundario, ;
 }
-
-/*.sectionContacto{
-    width: 600px;
-    height: 580px;
-    margin: 26px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #f3edf8;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 
 /*-----FOOTER-----*/
 

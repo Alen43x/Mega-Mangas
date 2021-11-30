@@ -30,6 +30,53 @@ h2 {
   font-family: 'Big Shoulders Stencil Display', cursive;
   color: #215ce6; }
 
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .form-register .botons {
+    width: 100%;
+    background: #215ce6;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px; }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form-register input {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #215ce6;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white; }
+  .form-register textarea {
+    background-color: #24303c;
+    border: solid 1px #215ce6; }
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .form-register a {
+    color: white;
+    text-decoration: none; }
+    .form-register a a:hover {
+      color: white;
+      text-decoration: underline; }
+
 /*---NAVEGADOR---*/
 #d-flex {
   visibility: hidden; }
@@ -54,23 +101,21 @@ h2 {
   .navbar img {
     width: 150px;
     height: 110px; }
-
-.d-flex input {
-  border: solid 1.8px #215ce6;
-  font-size: 14px;
-  height: 24px;
-  border-radius: 12px; }
-
-.d-flex button {
-  display: inline-flex;
-  align-items: center;
-  color: azure;
-  border: solid 1.5px #215ce6;
-  height: 24px;
-  border-radius: 10px; }
-  .d-flex button:hover {
-    background-color: #215ce6;
-    border: solid 1.5px #215ce6; }
+  .navbar .d-flex input {
+    border: solid 1.8px #215ce6;
+    font-size: 14px;
+    height: 24px;
+    border-radius: 12px; }
+  .navbar .d-flex button {
+    display: inline-flex;
+    align-items: center;
+    color: azure;
+    border: solid 1.5px #215ce6;
+    height: 24px;
+    border-radius: 10px; }
+    .navbar .d-flex button:hover {
+      background-color: #215ce6;
+      border: solid 1.5px #215ce6; }
 
 /*---INDEX---*/
 .titulo {
@@ -274,60 +319,6 @@ h2 {
   font-family: 'Big Shoulders Stencil Display', cursive;
   color: #215ce6; }
 
-.form-register {
-  width: 400px;
-  background: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
-  box-shadow: 7px 13px 37px #000; }
-
-.form-register h4 {
-  font-size: 22px;
-  margin-bottom: 20px; }
-
-.controls {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #215ce6;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white; }
-
-.form-register p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px; }
-
-.form-register textarea {
-  background-color: #24303c;
-  border: solid 1px #215ce6; }
-
-.form-register a {
-  color: white;
-  text-decoration: none; }
-
-.form-register a:hover {
-  color: white;
-  text-decoration: underline; }
-
-.form-register .botons {
-  width: 100%;
-  background: #215ce6;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px; }
-
 /*---CONTACTO---*/
 .tituloContacto {
   font-size: 35px;
@@ -335,20 +326,6 @@ h2 {
   margin-top: 25px;
   font-family: 'Big Shoulders Stencil Display', cursive;
   color: #215ce6; }
-
-/*.sectionContacto{
-    width: 600px;
-    height: 580px;
-    margin: 26px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #f3edf8;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 
 /*-----FOOTER-----*/
 footer {
